@@ -30,7 +30,7 @@ const Navbar:NextPage = () => {
   }, []);
 
   return (
-    <nav className="bg-gray-200 p-4 sticky top-0 z-50">
+    <nav className="bg-white p-4 sticky top-0 z-50">
       <div className="container mx-auto flex flex-col md:flex-row md:justify-between md:items-center relative">
         {/* Brand name centered for mobile view */}
         <Link
@@ -41,17 +41,20 @@ const Navbar:NextPage = () => {
           <Image className="mx-4" src={Nitgoa} alt="SPIE Logo" width={45} height={45}/>
         </Link>
         <div className="md:flex space-x-4 mt-4 md:mt-0 hidden">
-          <Link href="/" className={`text-black font-bold hover:bg-white hover:text-black hover:font-extrabold hover:ring-offset-2 hover:ring-2 rounded-3xl px-3 py-1`}>
+          <Link href="/" className={`text-black font-bold hover:bg-gray-200 hover:text-black hover:font-extrabold hover:ring-offset-2 hover:ring-2 rounded-3xl px-3 py-1`}>
             Home
           </Link>
            <Link href="/" className={`text-black rounded-2xl px-3 py-1`}>
             News
           </Link>
+           <Link href="/" className={`text-black rounded-2xl px-3 py-1`}>
+            Gallery
+          </Link>
           <Link href="/" className={`text-black rounded-2xl px-3 py-1`}>
             Committies
           </Link>
           <Link href="/" className={`text-black rounded-2xl px-3 py-1`}>
-            About
+            About us
           </Link>
           <Link href="/" className={`text-black rounded-2xl px-3 py-1`}>
           <FaUserCircle size={28} color="black" title="User Icon" />
@@ -80,7 +83,7 @@ const Navbar:NextPage = () => {
         </button>
         {/* Mobile menu */}
         
-          <div className={`bg-gray-200 mt-2 ${!isMobileMenuOpen?"hidden -translate-y-100":"flex ease-linear translate-y-0"} justify-center flex-col items-center`}>
+          <div className={`bg-white mt-2 ${!isMobileMenuOpen?"hidden -translate-y-100":"flex ease-linear translate-y-0"} justify-center flex-col items-center`}>
             <Link href="/" className={`block py-2 px-4 rounded-2xl text-black`} onClick={toggleMobileMenu}>
               Home
             </Link>
