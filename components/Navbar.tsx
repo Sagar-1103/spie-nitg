@@ -50,7 +50,7 @@ const Navbar:NextPage = () => {
            <Link href="/" className={`text-black rounded-2xl px-3 py-1`}>
             Gallery
           </Link>
-          <Link href="/" className={`text-black rounded-2xl px-3 py-1`}>
+          <Link href="/committies" className={`text-black rounded-2xl px-3 py-1`}>
             Committies
           </Link>
           <Link href="/" className={`text-black rounded-2xl px-3 py-1`}>
