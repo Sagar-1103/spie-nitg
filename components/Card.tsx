@@ -23,8 +23,8 @@ export default function MediaCard({filename}:any) {
         title="green iguana"
     /> */}
     
-      <CardContent>
       <Image src={`http://localhost:3000/api/uploadsCommittiesImages/${filename}`} alt="President" width={200} height={200}/>
+      <CardContent>
         <Typography gutterBottom variant="h6" component="div">
           Member
         </Typography>
