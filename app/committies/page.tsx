@@ -5,7 +5,8 @@ import ComForm from "@/components/ComForm"
 
 const getImages = async()=>{
   try {
-      const res = await fetch("http://localhost:3000/api/getCommittiesImages",{
+    const host:string = "http://localhost:3000"||"https://spie-nitg.vercel.app";
+      const res = await fetch(`${host}/api/getCommittiesImages`,{
           cache:"no-store",
       });
       // if (!res.ok) {
@@ -26,7 +27,6 @@ export default async function Committies() {
       {images && images.map((img:any) =>(
         <div className="my-5 mx-16" key={img._id}>
           
-                  {/* <Image src={`http://localhost:3000/api/uploadsCommittiesImages/${img.filename}`} width={500} height={500} alt="Sagar"/> */}
                   <Card filename={img.filename}/>
                 </div>
             ))}

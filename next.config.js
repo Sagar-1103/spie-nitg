@@ -14,6 +14,14 @@ const nextConfig = {
             protocol: 'https',
             hostname: 'spie-nitg-chau7j1zq-sagar-1103.vercel.app',
             pathname: '**',
+          },{
+            protocol: 'https',
+            hostname: 'spie-nitg.vercel.app',
+            pathname: '**',
+          },{
+            protocol: 'https',
+            hostname: 'spie-nitg-sagar-1103.vercel.app',
+            pathname: '**',
           }
         ],
       },

@@ -40,7 +40,8 @@ export default function BasicModal() {
       formData.append(file.name,file);
     }
     // 4. use axios to send the FormData
-    const filename = await axios.post("/api/uploadCommitiesImages", formData);
+     await axios.post("/api/uploadCommitiesImages", formData);
+    // const filename = await axios.post("/api/uploadCommitiesImages", formData);
     // console.log(filename);
     
     // let fileNameWithoutExtension = fileName.split('.')[0];

@@ -13,6 +13,7 @@ import EditIcon from '@mui/icons-material/Edit';
 
 
 export default function MediaCard({filename}:any) {
+  const host:string = "http://localhost:3000"||"https://spie-nitg.vercel.app";
   // console.log(filename);
   return (
     <div>
@@ -23,7 +24,7 @@ export default function MediaCard({filename}:any) {
         title="green iguana"
     /> */}
     
-      <Image src={`http://localhost:3000/api/uploadsCommittiesImages/${filename}`} alt="President" width={200} height={200}/>
+      <Image src={`${host}/api/uploadsCommittiesImages/${filename}`} alt="President" width={200} height={200}/>
       <CardContent>
         <Typography gutterBottom variant="h6" component="div">
           Member
