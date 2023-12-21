@@ -5,7 +5,7 @@ import ComForm from "@/components/ComForm"
 
 const getImages = async()=>{
   try {
-    const host:string = "http://localhost:3000"||"https://spie-nitg.vercel.app";
+    const host:string = "https://spie-nitg.vercel.app";
       const res = await fetch(`${host}/api/getCommittiesImages`,{
           cache:"no-store",
       });
@@ -14,7 +14,7 @@ const getImages = async()=>{
       // }
       return await res.json();
   } catch (error) {
-      console.log("Error loading topics",error);
+      console.log("Error loading topics in getImages",error);
   }
 }
 

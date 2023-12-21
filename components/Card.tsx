@@ -13,7 +13,7 @@ import EditIcon from '@mui/icons-material/Edit';
 
 
 export default function MediaCard({filename}:any) {
-  const host:string = "http://localhost:3000"||"https://spie-nitg.vercel.app";
+  const host:string ="https://spie-nitg.vercel.app";
   // console.log(filename);
   return (
     <div>
