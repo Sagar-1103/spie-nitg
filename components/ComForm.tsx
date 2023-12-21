@@ -22,6 +22,7 @@ const style = {
 };
 
 export default function BasicModal() {
+  const host:string ="https://spie-nitg.vercel.app";
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
@@ -40,7 +41,7 @@ export default function BasicModal() {
       formData.append(file.name,file);
     }
     // 4. use axios to send the FormData
-     await axios.post("/api/uploadCommitiesImages", formData);
+     await axios.post(`${host}/api/uploadCommitiesImages`, formData);
     // const filename = await axios.post("/api/uploadCommitiesImages", formData);
     // console.log(filename);
     
